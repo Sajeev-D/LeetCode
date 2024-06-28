@@ -22,7 +22,9 @@ class Solution {
     /*
     - j is the end of the window, i is the start of the window. Starts empty
     first.
+    -Concept: Expand the window in a loop. If a repeat is found, then contract the window until the repeat is removed, keep track of the largest window length recorded so far.
     */
+
     for (int i = 0, j = 0; j < s.size(); j++) {
       // Check if s[j] is already in charMap, which stores the last seen
       // position of each character.
