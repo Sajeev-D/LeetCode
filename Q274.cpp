@@ -1,23 +1,29 @@
-#include <algorithm>
-#include <iostream>
-#include <vector>
-using namespace std;
+// #include <algorithm>
+// #include <iostream>
+// #include <vector>
+// using namespace std;
 
-class Solution {
- public:
-  int hIndex(vector<int>& citations) {
-    sort(citations.begin(), citations.end());
+// class Solution {
+//  public:
+//   int hIndex(vector<int>& citations) {
+//     sort(citations.rbegin(), citations.rend());
 
-    int maxHindex = 0;
+//     int maxHindex = 0;
 
-    for (int i = 0; i < citations.size(); i++) {
-      if (citations.size() - i >= citations[i]) {
-        if (citations.size() - i > maxHindex) maxHindex = citations.size() - i;
-      }
-    }
+//     for (int i = 0; i < citations.size(); i++) {
+//       if (citations[i] >= i + 1) {
+//         maxHindex = i + 1;
+//       } else
+//         break;
+//     }
 
-    return maxHindex;
-  }
-};
+//     return maxHindex;
+//   }
+// };
 
-int main() { return 0; }
+// int main() {
+//   vector<int> citations = {3, 0, 6, 1, 5};
+//   Solution s1;
+//   s1.hIndex(citations);
+//   return 0;
+// }
