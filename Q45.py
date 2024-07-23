@@ -32,7 +32,7 @@
 #             r = farthest
 #             res += 1
 
-#         return res
+#         return resq
 
 
 
